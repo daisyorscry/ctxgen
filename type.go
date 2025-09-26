@@ -130,9 +130,10 @@ type PHPClassFile struct {
 }
 
 type RouteFile struct {
-	Path    string   `json:"path"`
-	Snips   []string `json:"snips,omitempty"`
-	Guessed []string `json:"guessed,omitempty"`
+	Path    string            `json:"path"`
+	Snips   []string          `json:"snips"`
+	Guessed []string          `json:"guessed"`
+	Meta    map[string]string `json:"meta,omitempty"`
 }
 
 type GitInfo struct {
